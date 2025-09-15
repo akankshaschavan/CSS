@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--flex direction
+    row:items are placed horizontaly form left to right
+    column:items are placed top to bottom
+    vice versa column-reverse and row reverse-->
+    <style>
+        .row{
+            display: flex;
+            flex-direction: row;/*  - */
+            gap: 10px;
+
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .box{
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--flex direction-->
+    <div class="row">
+        <div class="box">row1</div>
+        <div class="box">row2</div>
+    </div>
+    <div class="column">
+        <div class="box">column1</div>
+        <div class="box">column2</div>
+    </div>
+</body>
+</html>

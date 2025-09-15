@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-color: #fafafa;
+            line-height: 1.6;
+        }
+        h2{
+            margin-top: 20px;
+            color: #222;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h1{
+            color:#333
+        }
+        .demo-box{
+            margin: 20px 0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            color:white;
+            font-weight: bold;
+        }
+        img{
+            border-radius: 6px;
+        }
+        /*filters*/
+        .filter{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .filter img{
+            width: 300px;
+            height:150px;
+            object-fit: cover;
+        }
+        .blur{
+            filter:blur(10px);
+        }
+        .brightness{
+            filter: brightness(1.7);
+        }
+        .contrast{
+            filter: contrast(2);
+        }
+        .grayscale{
+           
+            filter:grayscale(100%)
+        }
+        .sepia{
+            filter: sepia(80%);
+        }
+
+        /*CSs shapes*/
+        .shapes{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .shapes img{
+            width: 300px;
+            height:150px;
+            object-fit: cover;
+
+        }
+        .circle{
+            clip-path: circle(50%);
+        }
+        .triangle{
+            clip-path: polygon(50% 0%,0% 100%,100% 100%);
+        }
+        .ellipse{
+            clip-path: ellipse(60% 40% at 50% 50%);
+        }
+        /*shadows*/
+        .box-shadow{
+            background: white;
+            color: black;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.5),-5px,-5px 15px rgba(0,0,0,0.1);
+        }
+        .inset-shadow{
+            background: lightcoral;
+            box-shadow: inset 5px 5px 15px rgba(0,0,0,0.5) ;
+        }
+        .text-shadow{
+            background: darkslateblue;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS filters</h2>
+    <div class="filter">
+        <img src="myppic.jpg"class="blur">
+         <img src="mypic.jpg"class="brightness">
+          <img src="mypic.jpg"class="contrast">
+           <img src="mypic.jpg"class="grayscale">
+            <img src="mypic.jpg"class="sepia">
+    </div>
+    <h2>Css shapes and clip paths</h2>
+    <div class="shapes">
+        <img src="mypic.jpg"class="circle">
+        <img src="mypic.jpg"class="traingle">
+        <img src="mypic.jpg"class="ellipse">
+        
+    </div>
+    <h2>shadow</h2>
+    <div class="box-shadow">Box shadow</div>
+    <div class="inset-shadow">Inset shadow</div>
+    <div class="text-shadow">text shadow</div>
+
+</body>
+</html>

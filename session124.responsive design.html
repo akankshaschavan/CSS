@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h2{
+            margin-top: 400px;
+            color:#333;
+        }
+        /*viewport units*/
+        .viewport-demo{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .vp-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+        .vw{
+            width: 30vw;
+            height:80px;
+            background: coral;
+        }
+        .vh{
+            width: 120px;
+            height:20vh;
+            background: seagreen;
+        }
+        .vmin{
+            width:20vmin;
+            height:20vmin;
+            background: steelblue;
+        }
+        .vmax{
+            width:40vmax;
+            height: 80px;
+            background: goldenrod;
+        }
+
+        /*relative units*/
+        .relative-demo{
+            font-size: 16PX;
+
+        }
+        .rel-box{
+            background: #444;
+            color: white;
+            padding: 10px;
+            margin:10px 0;
+            border-radius: 6px;
+        }
+        .em{
+            font-size:2em;
+        }
+        .rem{
+            font-size: 2rem;/*1rem:16px*/
+        }
+        .percent{
+            width:80%;
+            background: darkorange;
+        }
+
+        /*mobile-first media queries*/
+.responsive-box{
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+    background: gray;
+}
+@media(min-width:600px){
+    .responsive-box{
+        background: dodgerblue;
+    }
+}
+@media(min-width:1024px){
+    .responsive-box{
+        background:seagreen;
+    }
+}
+@media(min-width:1440px){
+    .responsive-box{
+        background:purple;
+    }
+}
+/*responsive layout*/
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+grid div{
+    flex:1 1 100%;
+    padding: 20px;
+    background: grey;
+    text-align: center;
+    border-radius: 8px;
+}
+@media(min-width:600px){
+    .grid div{
+        flex:1 1 45%;
+    }
+}
+@media(min-width:1024px){
+    .grid div{
+        flex:1 1 22%;
+    }
+}
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Responsive web design</h1>
+    <h2>1.viewport Units(vw, vh ,vmin,vmax )</h2>
+    <div class="viewport-demo">
+        <div class="vp-box vw"></div>
+        <div class="vp-box vh"></div>
+        <div class="vp-box vmin"></div>
+        <div class="vp-box vmax"></div>
+    </div>
+    <h2>Relative units(em,rem,%)</h2>
+    <div class="relative-demo">
+        <div class="rel-box em">font-size:2em (relative to parent)</div>
+        <div class="rel-box rem">font-size:2rem (relative to root)</div>
+       <div class="rel-box percent">width:82% (relative to parent)</div>
+    </div>
+    <h2>Mobile design with media queries</h2>
+    <div class="responsive-box">
+        REsize the screen->color changes(mobile->tablet->desktop->large screen)
+    </div>
+    <h2>4.Responsive layout</h2>
+    <div class="grid">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+        <div>Box4</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Tours & Travels</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(0,0,0,0.7);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    nav img {
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: url("project2.jpg") no-repeat center/cover;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* Services Section */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .service-card h3 {
+      margin: 15px 0 10px;
+      color: #333;
+    }
+
+    .service-card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.8);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <img src="logoimage.jpg" alt="Logo">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Our Services</h1>
+    <p>Discover the best travel experiences with us</p>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="service-card">
+      <img src="images/tour.jpg" alt="Tour Packages">
+      <h3>Tour Packages</h3>
+      <p>Customized domestic and international tours for all budgets and interests.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/hotel.jpg" alt="Hotel Booking">
+      <h3>Hotel Booking</h3>
+      <p>Best deals on hotels, resorts, and homestays at your favorite destinations.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/transport.jpg" alt="Transport">
+      <h3>Transport Services</h3>
+      <p>Safe and reliable transport from airport pickups to luxury buses.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/adventure.jpg" alt="Adventure">
+      <h3>Adventure Activities</h3>
+      <p>Experience trekking, rafting, paragliding, and other thrilling adventures.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tours & Travels | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
